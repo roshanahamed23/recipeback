@@ -6,8 +6,9 @@ import { Reciperouter } from '../Routes/Recipes.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const port = process.env.PORT;
-const dbUrl = process.env.DB_URL;
+const port = 4000;
+const dbUrl = 'mongodb+srv://roshan:roshan@cluster0.7mllm2v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+;
 const app = express();
 
 app.use(express.json());
